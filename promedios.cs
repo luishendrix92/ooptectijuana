@@ -17,7 +17,7 @@ namespace ControlAlumnos {
       Console.WriteLine("Cuál fue tu tercer calificación?");
       float cal3 = float.Parse(Console.ReadLine());
 
-      float promedio = (cal1 + cal2 + cal3) / 3;
+      float promedio = (cal1 + cal2 + cal3) / 3;      
 
       Console.WriteLine("Tu nombre es {0} y tu promedio es {1}.", nombre, promedio);
     } // Fin de mètodo Main

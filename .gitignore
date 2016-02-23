@@ -1,2 +1,4 @@
 # Executable Files
 *.exe*
+# Git Ignore
+.gitignore
