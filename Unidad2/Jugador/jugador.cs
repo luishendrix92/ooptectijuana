@@ -31,6 +31,7 @@ namespace JugadorDeFutbol {
       goles         = gol ;
       partidos      = part;
       numeroJugador = num ;
+      promedioGoles = CalcularPromedio();
     } // Fin de sobrecarga de constructor
 
     public float CalcularPromedio() {
@@ -39,8 +40,9 @@ namespace JugadorDeFutbol {
     } // Fin de calcular promedio de goles x partido
 
     public void Imprimir() {
-      Console.WriteLine("texto");
-      Console.WriteLine("texto");
+      Console.WriteLine("El jugador #{0} ({1}) ha metido {2} goles en {3} partidos.",
+        nombre, nombre, goles, partidos);
+      Console.WriteLine("Tiene un promedio de {0} goles/partido.", promedioGoles);
     } // Fin de imprimir datos del jugador
   } // Fin de clase Jugador
 } // Fin de namespace
