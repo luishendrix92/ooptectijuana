@@ -40,6 +40,7 @@ namespace JugadorDeFutbol {
 
     public void Imprimir() {
       Console.WriteLine("texto");
+      Console.WriteLine("texto");
     } // Fin de imprimir datos del jugador
   } // Fin de clase Jugador
 } // Fin de namespace
