@@ -37,3 +37,13 @@ namespace FechaYTiempo {
     } // Fin de Método Main
   } // Fin de clase Principal
 } // Fin de namespace
+
+/* NOTAS EN LABORATORIO
+----------------------------------------
+public enum MesNombre {
+  Meses, Enero, Febrero,
+  Marzo, Mayo, Junio,
+  Julio, Agosto, Septiembre,
+  Octubre, Noviembre, Diciembre
+} // Fin de enumeración pública
+--------------------------------------*/
