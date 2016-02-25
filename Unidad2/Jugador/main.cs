@@ -8,7 +8,9 @@ namespace JugadorDeFutbol {
         "Javier Hernandez", 118, 290, 7
       ); // Fin de instanciación
 
+      Console.WriteLine("============================");
       chicharito.Imprimir();
+      Console.WriteLine("============================");
     } // Fin de Método Main
   } // Fin de clase Programa
 } // Fin de namespace
