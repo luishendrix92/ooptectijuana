@@ -24,7 +24,7 @@ Define una clase para cada una de las siguientes figuras geométricas:
 - Tarea 4. Círculo
 - Tarea 5. Trapecio
 
-(define los atributos, propiedades, métodos constructores y los métodos correspondientes a la clase para calcular área y perímetro).
+Define los atributos, propiedades, métodos constructores y los métodos correspondientes a la clase para calcular área y perímetro.
 
 En otra clase define el método Main, crea un objeto de cada tipo de figura, modifica su estado y comportamiento e imprime los resultados.
 
@@ -33,4 +33,5 @@ Define una clase CuentaBancaria con los siguientes atributos: número, titular, 
 
 En otra clase define el método Main, crea un objeto, modifica su estado y comportamiento e imprime los resultados.
 
-> Enviar archivo comprimido al correo: alejandra_mancilla2000@yahoo.com.mx del 1 al 3 de marzo. Examen Unidad 1 y 2: Viernes 4 de Marzo del 2016.
+> Enviar archivo comprimido al correo: alejandra_mancilla2000@yahoo.com.mx del 1 al 3 de marzo.
+> Examen Unidad 1 y 2: Viernes 4 de Marzo del 2016.
