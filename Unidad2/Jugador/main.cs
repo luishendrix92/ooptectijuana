@@ -5,7 +5,7 @@ namespace JugadorDeFutbol {
     public static void Main() {
       Console.Clear();
       Jugador chicharito = new Jugador(
-        "Javier Hernandez", 118, 290, 7
+        "Javier Hernández", 118, 290, 7
       ); // Fin de instanciación
 
       Console.WriteLine("============================");
