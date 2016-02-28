@@ -4,8 +4,8 @@ namespace Tarea6 {
   class Programa {
     public static void Main() {
       Console.Clear();
-      Cuenta falsa = new CuentaBancaria();
-      Cuenta buena = new CuentaBancaria();
+      CuentaBancaria falsa = new CuentaBancaria();
+      CuentaBancaria buena = new CuentaBancaria();
 
       // Cambiar atributos de cuentas
       falsa.Titular = "Menganito Perez";
