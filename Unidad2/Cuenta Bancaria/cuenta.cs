@@ -34,21 +34,25 @@ namespace Tarea6 {
     public void Deposito(float monto) {
       if (monto > 0) {
         saldo += monto;
-        Console.WriteLine("Depósito realizado.");
-        Console.WriteLine("> Balance: {0:C2}", saldo);
+        Console.WriteLine("Depósito realizado ({0}).", saldo);
+        Console.WriteLine("Cuenta: {0}", titular);
+        Console.WriteLine("> Balance: {0:C2}\n", saldo);
       } else { // Monto fue de 0 o negativo
         Console.WriteLine("El monto debe ser positivo.");
+        Console.WriteLine("Cuenta: {0}\n", titular);
       } // Fin de comprobar monto positivo
     } // Fin de depositar saldo a cuenta
 
     public float Retiro(float monto) {
       if (saldo >= monto && monto > 0) {
-        Console.WriteLine("Retiro realizado.");
-        Console.WriteLine("> Balance: {0:C2}", saldo);
         saldo -= monto;
+        Console.WriteLine("Retiro realizado ({0}).", saldo);
+        Console.WriteLine("Cuenta: {0}", titular);
+        Console.WriteLine("> Balance: {0:C2}\n", saldo);
         return monto;
       } else { // No hay dinero suficiente
         Console.WriteLine("Retiro fallido.");
+        Console.WriteLine("Cuenta: {0}\n", titular);
         return 0;
       } // Fin de ver si hay dinero
     } // Fin de retirar saldo de la cuenta
