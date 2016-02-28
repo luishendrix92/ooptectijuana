@@ -42,5 +42,25 @@ namespace Figuras {
     public float calcularArea() {
       return PI * (radio * radio);
     } // Fin de calcular el área del círculo
+
+    public void Detalles() {
+      Console.Clear();
+      Console.WriteLine("###################################");
+      Console.WriteLine("## Nombre: {0}", nombre);
+      Console.WriteLine("###################################");
+
+      Console.WriteLine("\nEste es un círculo con los");
+      Console.WriteLine("siguientes detalles de figura:");
+
+      Console.WriteLine("\nPropiedades:");
+      Console.WriteLine("-----------------------------------");
+      Console.WriteLine("Radio: {0}", radio);
+      Console.WriteLine("Diámetro: {0}", calcularDiametro());
+      Console.WriteLine("Área: {0}", calcularArea());
+      Console.WriteLine("Circunferencia: {0}",calcularCircunferencia());
+
+      Console.WriteLine("\nPresione cualquier tecla para continuar...");
+      Console.ReadKey();
+    } // Fin de imprimir ficha del triángulo
   } // Fin de clase Circulo
 } // Fin de espacio de nombre

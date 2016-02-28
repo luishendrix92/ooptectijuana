@@ -123,7 +123,7 @@ namespace Figuras {
     } // Fin de crecer o achicar triángulo
 
 
-    /*-- Métodos ----------------------------------------*/
+    /*-- Métodos -----------------------------------------------------*/
     public float calcularArea() {
       // Utilizando la Fórmula de Herón en la que obtenemos
       // triánngulo conociendo sus 3 lados.
@@ -134,6 +134,10 @@ namespace Figuras {
 
       return (float) Math.Sqrt(semiPerim * a * b * c);
     } // Fin de fórmula de Herón
+
+    public float calcularPerimetro() {
+      return lados[0] + lados[1] + lados[2];
+    } // Fin de calcular el perímetro del triángulo
 
     public float[] angulos() {
       // Ley de cosenos conociendo 3 lados
@@ -182,5 +186,32 @@ namespace Figuras {
         return "indeterminado";
       }// Fin de revisar y comparar lados
     } // Fin de determinar tipo (Irreg, Rect, Isósceles)
+
+    public void Detalles() {
+      Console.Clear();
+      Console.WriteLine("###################################");
+      Console.WriteLine("## Nombre: {0}", nombre);
+      Console.WriteLine("###################################");
+
+      Console.WriteLine("\nÁngulos internos:");
+      Console.WriteLine("-----------------------------------");
+      foreach (float angulo in angulos())
+      { Console.WriteLine(angulo); }
+
+      Console.WriteLine("\nLados del triángulo:");
+      Console.WriteLine("-----------------------------------");
+      foreach (float lado in lados)
+      { Console.WriteLine(lado); }
+
+      Console.WriteLine("\nOtros detalles:");
+      Console.WriteLine("-----------------------------------");
+      Console.WriteLine("Altura: {0}", altura());
+      Console.WriteLine("Área: {0}", calcularArea());
+      Console.WriteLine("Perímetro: {0}", calcularPerimetro());
+      Console.WriteLine("Tipo: {0}", determinarTipo());
+
+      Console.WriteLine("\nPresione cualquier tecla para continuar...");
+      Console.ReadKey();
+    } // Fin de imprimir ficha del triángulo
   } // Fin de clase Triángulo
 } // Fin de espacio de nombre

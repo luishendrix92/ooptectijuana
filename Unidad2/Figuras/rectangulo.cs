@@ -39,5 +39,25 @@ namespace Figuras {
     float calcularArea() {
       return ancho * alto;
     } // Fin de calcular área
+
+    public void Detalles() {
+      Console.Clear();
+      Console.WriteLine("###################################");
+      Console.WriteLine("## Nombre: {0}", nombre);
+      Console.WriteLine("###################################");
+
+      Console.WriteLine("\nEste es un rectángulo con los");
+      Console.WriteLine("siguientes detalles de figura:");
+
+      Console.WriteLine("\nPropiedades:");
+      Console.WriteLine("-----------------------------------");
+      Console.WriteLine("Altura: {0}", alto);
+      Console.WriteLine("Anchura: {0}", ancho);
+      Console.WriteLine("Área: {0}", calcularArea());
+      Console.WriteLine("Perímetro: {0}", calcularPerimetro());
+
+      Console.WriteLine("\nPresione cualquier tecla para continuar...");
+      Console.ReadKey();
+    } // Fin de imprimir ficha del triángulo
   } // Fin de clase Rectángulo
 } // Fin de espacio de nombre
