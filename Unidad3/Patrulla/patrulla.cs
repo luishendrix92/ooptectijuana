@@ -26,5 +26,3 @@ namespace PatrullaHerencia {
     } // Fin de apagar o prender la sirena
   } // Fin de clase Vehiculo
 } // Fin de espacio de nombre
-
-/* No la eh hecho.. pero debemos crear una herencia de la clase vehículo en una clase patrulla, va a tener un atributo y una clase bool que diga si la sirena esta encendida o apagada*/
