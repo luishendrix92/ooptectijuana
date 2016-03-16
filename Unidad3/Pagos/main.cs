@@ -25,8 +25,8 @@ namespace Pagos {
         pago2.Cantidad, pago2.Moneda, pago2.Balance());
       Console.WriteLine("El pago se realizó el día: {0}",
         pago2.Fecha.ToLongDateString());
-      Console.WriteLine("Es hora de recuperar algo de saldo...");
-      pago2.CargarSaldo(50);
+      Console.WriteLine("Es hora de cargar algo de saldo...");
+      pago2.CargarSaldo();
       Console.WriteLine("Ahora tienes: {0:C2} en tu cuenta.", pago2.Balance());
     } // Fin de método principal
   } // Fin de clase Programa

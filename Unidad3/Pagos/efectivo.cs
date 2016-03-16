@@ -29,7 +29,7 @@ namespace Pagos {
     } // Fin de constructores sobrecargados
 
     public float CalcularCambio() {
-      return cantEfvo - this.Cantidad;
+      return cantEfvo - Cantidad;
     } // Fin de ver cuánto regresar de cambio
   } // Fin de clase Efectivo
 } // Fin de espacio de nombre

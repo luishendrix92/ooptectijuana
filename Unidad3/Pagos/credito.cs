@@ -45,13 +45,13 @@ namespace Pagos {
       noTarjeta = n; titular = t; saldo = s;
     } // Fin de constructores sobrecargados
 
-    public void CargarSaldo(float monto) {
-      this.saldo += monto;
-      Console.WriteLine("Se agregaron {0:C2} a tu cuenta.", monto);
+    public void CargarSaldo() {
+      saldo += Cantidad;
+      Console.WriteLine("Se agregaron {0:C2} a tu cuenta.", Cantidad);
     } // Fin de agregar saldo a cuenta
 
     public float Balance() {
-      return saldo - this.Cantidad;
+      return saldo;
     } // Fin de balance de la cuenta
   } // Fin de clase Credito
 } // Fin de espacio de nombre
