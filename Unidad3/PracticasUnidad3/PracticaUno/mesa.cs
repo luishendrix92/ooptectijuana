@@ -7,7 +7,7 @@ namespace PracticaUno {
     :base(f, m, p, c, a) {}
   } // Fin de clase Mesa
 
-  class MesaCircular : Mesa {
+  class MesaCircular : Mesa, IMostrar {
     float diametro;
 
     public float Diametro {
@@ -21,7 +21,7 @@ namespace PracticaUno {
       diametro = d;
     } // Fin de constructor sobrecargado
 
-    private float Superficie() {
+    public float Superficie() {
       const float PI = 3.14159f;
 
       return PI * (diametro / 2) * (diametro / 2);
@@ -34,7 +34,7 @@ namespace PracticaUno {
     } // Fin de método para mostrar datos específicos
   } // Fin de clase MesaCircular
 
-  class MesaRectangular : Mesa {
+  class MesaRectangular : Mesa, IMostrar {
     float ancho, largo;
 
     public float Ancho {
@@ -51,7 +51,7 @@ namespace PracticaUno {
       ancho = w; largo = l;
     } // Fin de constructor sobrecargado
 
-    private float Superficie() {
+    public float Superficie() {
       return ancho * largo;
     } // Fin de calcular el área
 
