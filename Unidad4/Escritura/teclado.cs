@@ -21,9 +21,6 @@ namespace Escritura {
     public void Teclazo() {
       ConsoleKeyInfo tecla;
 
-      // Prevenir que se termine el programa con CTRL+C
-      // Console.TreatControlCAsInput = true;
-
       do { // Detectar teclas mientras no sea ESC
         tecla = Console.ReadKey(true);
 
