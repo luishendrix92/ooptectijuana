@@ -6,7 +6,7 @@ namespace Escritura {
       Console.Clear();
       // Inicia el programa ---->
       Teclado logi = new Teclado("Logitech", 40);
-
+ 
       Console.WriteLine("Bienvenido al teclado {0} de {1} teclas.",
         logi.Marca, logi.NumTeclas                                );
       Console.WriteLine("Presione teclas a ver que ocurre ;)"     );

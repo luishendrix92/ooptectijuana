@@ -1,7 +1,7 @@
 using System;
 
-namespace PracticaDos {
-  class CuentaBancaria {
+namespace PracticaTres {
+  abstract class CuentaBancaria {
     int numero;
     string titular;
     double saldo, interes;
@@ -32,19 +32,6 @@ namespace PracticaDos {
       Console.WriteLine("Te quedan {0:C2} en tu cuenta.", saldo);
     } // Fin de depositar dinero
 
-    public void Retiro(double monto) {
-      if (saldo >= monto) {
-        saldo -= monto;
-        Console.WriteLine("Se han retirado {0:C2} de la cuenta...", monto);
-        Console.WriteLine("Te quedan {0:C2} en tu cuenta.", saldo);
-      } else { Console.WriteLine("No se pudo retirar dinero!"); }
-    } // Fin de sacar dinero de la cuenta
-
-    public void DepositoInteresMes() {
-      double descuento = 15;
-
-      saldo -= descuento;
-      Console.WriteLine("Se te descontaron {0:C2} por depositar!", descuento);
-    } // Fin de depositar con interés mensual
+    abstract public void DepositoInteresMes();
   } // Fin de clase CuentaBancaria
 } // Fin de espacio de nombre
