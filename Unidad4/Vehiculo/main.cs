@@ -7,7 +7,7 @@ namespace Vehiculos {
     static void Main() {
       Console.Clear();
       // INICIA PROGRAMA -->
-
+      Taxi taxi = new Taxi("CDBE4", "SUV", "3", "433");
       // <-- TERMINA PROGRAMA
       Console.ReadKey();
     } // Fin de método principal
