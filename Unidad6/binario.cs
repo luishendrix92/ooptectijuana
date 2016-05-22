@@ -181,3 +181,16 @@ namespace ArchivosBinarios {
     } // Fin de método para reescribir datos con una lista
   } // Fin de clase estática para leer y escribir en binario
 } // Fin de espacio de nombre
+
+/* POSIBLE MÉTODO PARA LEER TODOS LOS BYTES DE UN ARCHIVO
+===========================================================
+public byte[] Leer bytes(Stream stream) {
+  using ( var ms = new MemoryStream() ) {
+    // Opcional, sólo en caso de error
+    stream.Position = 0;
+    
+    stream.CopyTo(ms);
+    return ms.ToArray();
+  }
+}
+==========================================================*/
